@@ -164,7 +164,7 @@ select student_Name from student where student_ID in (select student_ID from sch
 select students_number from class_ where class_number in (select class_number from school where student_ID = 098567);
 -- 3)
 select school_adress from school where class_number in (select class_number from class_ where students_number = 25);
--- Count an Group
+-- Count and Group
 select COUNT (student_Name)
 from student;
 -- 1)
